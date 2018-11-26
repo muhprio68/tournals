@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">tournals</string>
+    <string name="beranda">beranda</string>
+    <string name="riwayat">riwayat</string>
+    <string name="profil">profil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tambah_rencana">tambah rencana</string>
+    <string name="title_activity_tambah_rencana">TambahRencanaActivity</string>
+    <string name="konfirmasi">konfirmasi</string>
+    <string name="daftar_jadwal">Daftar Jadwal</string>
+    <string name="ganti_foto_profil">Ganti foto profil</string>
+    <string name="daftar">Daftar</string>
+    <string name="daftar_dengan_google">Daftar dengan Google</string>
+    <string name="sudah_punya_akun">Sudah punya akun</string>
+    <string name="tournals">tournals</string>
+    <string name="make_your_own_tour_journal">make your own tour journal</string>
+    <string name="lupa_password">lupa password?</string>
+    <string name="masuk_dengan_google">Masuk dengan Google</string>
+    <string name="belum_punya_akun">Belum punya akun</string>
+    <string name="reset_password">reset password</string>
+    <string name="pastikan">pastikan email anda telah terdaftar</string>
+    <string name="kirim_kode_reset">Kirim kode reset</string>
+    <string name="verifikasi">verifikasi</string>
+    <string name="masukkan">masukkan kode verifikasi untuk masuk</string>
+    <string name="title_activity_sub_rencana">SubRencanaActivity</string>
+</resources>
