@@ -25,4 +25,5 @@
     <string name="verifikasi">verifikasi</string>
     <string name="masukkan">masukkan kode verifikasi untuk masuk</string>
     <string name="title_activity_sub_rencana">SubRencanaActivity</string>
+    <string name="login">Login</string>
 </resources>

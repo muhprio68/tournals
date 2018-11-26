@@ -37,7 +37,7 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/fotoProfil"
+                android:id="@+id/ivfotoProfil"
                 android:layout_width="128dp"
                 android:layout_height="128dp"
                 android:src="@drawable/foto"
@@ -49,7 +49,7 @@
                 android:layout_width="215dp"
                 android:layout_height="32dp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@id/fotoProfil"
+                android:layout_below="@id/ivfotoProfil"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/btn_circle_merah"
                 android:text="@string/ganti_foto_profil"
@@ -117,7 +117,7 @@
                 android:inputType="textPassword"
                 android:backgroundTint="@color/merahApp"/>
             <Button
-                android:id="@+id/btnEditProfil"
+                android:id="@+id/btnSelesai"
                 android:layout_width="157dp"
                 android:layout_height="32dp"
                 android:layout_below="@id/edtConfirm"

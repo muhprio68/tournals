@@ -4,60 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="21dp"
     android:background="@drawable/gradient">
 
     <ImageView
+        android:id="@+id/ivBackVerifikasi"
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:src="@drawable/ic_navigate_putih"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"/>
-
-    <TextView
-        android:id="@+id/tvVerifikasi"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/verifikasi"
-        android:layout_above="@id/tvMasukkan"
-        android:textAllCaps="false"
-        android:textSize="28sp"
-        android:textColor="@color/putih"/>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ivBackVerifikasi"
+        android:layout_marginBottom="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="21dp">
 
-    <TextView
-        android:id="@+id/tvMasukkan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/masukkan"
-        android:layout_above="@id/edtKodeVerifikasi"
-        android:textSize="12sp"
-        android:textAllCaps="false"
-        android:textColor="@color/putih"/>
 
-    <EditText
-        android:id="@+id/edtKodeVerifikasi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:hint="kode verifikasi"
-        android:textSize="12sp"
-        android:textColorHint="@color/putih"
-        android:textColor="@color/putih"
-        android:inputType="text"
-        android:backgroundTint="@color/putih"/>
+            <TextView
+                android:id="@+id/tvVerifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verifikasi"
+                android:layout_marginTop="50dp"
+                android:textAllCaps="false"
+                android:textSize="28sp"
+                android:textColor="@color/putih"/>
 
-    <Button
-        android:id="@+id/btnVerifikasi"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:textSize="12sp"
-        android:text="Verifikasi"
-        android:layout_below="@id/edtKodeVerifikasi"
-        android:background="@drawable/btn_circle_merah"
-        android:textColor="@color/putih"
-        android:textAllCaps="false"
-        android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tvMasukkan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/masukkan"
+                android:layout_below="@+id/tvVerifikasi"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@color/putih"/>
 
+            <EditText
+                android:id="@+id/edtKodeVerifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMasukkan"
+                android:hint="kode verifikasi"
+                android:textSize="12sp"
+                android:textColorHint="@color/putih"
+                android:textColor="@color/putih"
+                android:inputType="text"
+                android:backgroundTint="@color/putih"/>
+
+            <Button
+                android:id="@+id/btnVerifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:textSize="12sp"
+                android:text="Verifikasi"
+                android:layout_below="@id/edtKodeVerifikasi"
+                android:background="@drawable/btn_circle_merah"
+                android:textColor="@color/putih"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
