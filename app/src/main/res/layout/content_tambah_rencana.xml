@@ -34,13 +34,17 @@
                     style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
             </android.support.v7.widget.Toolbar>
         </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rlEdit1"
+            android:layout_marginBottom="72dp">
         <RelativeLayout
             android:id="@+id/rlEdit2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:layout_below="@id/rlEdit1">
+            android:paddingRight="16dp">
             <EditText
                 android:id="@+id/edtNamaRencana"
                 android:layout_width="match_parent"
@@ -63,10 +67,32 @@
                 android:textSize="16sp"/>
 
             <EditText
-                android:id="@+id/edtWaktu"
+                android:id="@+id/edtNamaLokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvTambahjadwal"
+                android:hint="nama lokasi"
+                android:textSize="12sp"
+                android:textColorHint="@color/merahApp"
+                android:textColor="@color/merahApp"
+                android:inputType="text"
+                android:backgroundTint="@color/merahApp"/>
+            <EditText
+                android:id="@+id/edtTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtNamaLokasi"
+                android:hint="tanggal"
+                android:textSize="12sp"
+                android:textColorHint="@color/merahApp"
+                android:textColor="@color/merahApp"
+                android:inputType="date"
+                android:backgroundTint="@color/merahApp"/>
+            <EditText
+                android:id="@+id/edtWaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtTanggal"
                 android:hint="waktu"
                 android:textSize="12sp"
                 android:textColorHint="@color/merahApp"
@@ -75,7 +101,7 @@
                 android:backgroundTint="@color/merahApp"/>
 
             <EditText
-                android:id="@+id/spLetakPot"
+                android:id="@+id/edtLokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/edtWaktu"
@@ -91,7 +117,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="35dp"
-                android:layout_below="@id/spLetakPot"
+                android:layout_below="@id/edtLokasi"
                 android:background="@drawable/btn_circle_kuning"
                 android:text="@string/tambah_rencana"
                 android:textAllCaps="false"
@@ -116,9 +142,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/daftar_jadwal"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:textSize="16sp"
                 android:layout_below="@id/btnKonfirmasi"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rvDaftarJadwal"
+                android:layout_below="@id/tvDaftarJadwal">
+            </android.support.v7.widget.RecyclerView>
         </RelativeLayout>
+        </ScrollView>
     </RelativeLayout>
 </FrameLayout>

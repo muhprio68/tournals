@@ -25,28 +25,32 @@
                     style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
             </android.support.v7.widget.Toolbar>
         </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlEdit1"
+            android:layout_marginBottom="72dp">
         <RelativeLayout
             android:id="@+id/rlEdit2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:layout_below="@id/rlEdit1">
+            android:paddingRight="16dp">
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/fotoProfil"
                 android:layout_width="128dp"
                 android:layout_height="128dp"
                 android:src="@drawable/foto"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true" />
 
             <Button
                 android:id="@+id/btnGantiFoto"
                 android:layout_width="215dp"
                 android:layout_height="32dp"
-                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="153dp"
+                android:layout_below="@id/fotoProfil"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/btn_circle_merah"
                 android:text="@string/ganti_foto_profil"
                 android:textAllCaps="false"
@@ -57,7 +61,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="nama"
-                android:layout_above="@id/edtEmail"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/btnGantiFoto"
                 android:textSize="12sp"
                 android:textColorHint="@color/merahApp"
                 android:textColor="@color/merahApp"
@@ -68,7 +73,7 @@
                 android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/edtTTL"
+                android:layout_below="@id/edtNama"
                 android:hint="email"
                 android:textSize="12sp"
                 android:textColorHint="@color/merahApp"
@@ -81,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="tanggal lahir"
-                android:layout_centerVertical="true"
+                android:layout_below="@id/edtEmail"
                 android:textSize="12sp"
                 android:textColorHint="@color/merahApp"
                 android:textColor="@color/merahApp"
@@ -115,10 +120,9 @@
                 android:id="@+id/btnEditProfil"
                 android:layout_width="157dp"
                 android:layout_height="32dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
+                android:layout_below="@id/edtConfirm"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginBottom="100dp"
                 android:background="@drawable/btn_circle_merah"
                 android:text="Selesai"
                 android:textAllCaps="false"
@@ -129,15 +133,15 @@
                 android:id="@+id/btnBatal"
                 android:layout_width="157dp"
                 android:layout_height="32dp"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="100dp"
+                android:layout_below="@id/edtConfirm"
                 android:background="@drawable/btn_circle_kuning"
                 android:text="Batal"
                 android:textAllCaps="false"
                 android:textColor="@color/putih"
                 android:textSize="12sp" />
         </RelativeLayout>
+        </ScrollView>
     </RelativeLayout>
 </FrameLayout>

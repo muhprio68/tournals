@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="16dp"
+android:layout_marginBottom="1dp"
+android:background="@color/putih"
+android:outlineAmbientShadowColor="@color/hitam"
+android:outlineSpotShadowColor="@color/hitam"
+android:id="@+id/rlRencana"
+android:clickable="true"
+android:focusable="true"
+android:foreground="?attr/selectableItemBackground">
+<TextView
+    android:id="@+id/tvNamaRencana"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="16dp"
-    android:layout_marginBottom="1dp"
-    android:background="@color/putih"
-    android:outlineAmbientShadowColor="@color/hitam"
-    android:outlineSpotShadowColor="@color/hitam"
-    android:id="@+id/rlRencana"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?attr/selectableItemBackground">
-    <TextView
-        android:id="@+id/tvNamaRencana"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/merahApp"
-        android:textSize="16sp"/>
-    <TextView
-        android:id="@+id/tvPerjalanan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textColor="@color/text"
-        android:layout_below="@id/tvNamaRencana"/>
-    <TextView
-        android:id="@+id/tvTanggalMulai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textColor="@color/text"
-        android:layout_alignParentRight="true" />
-    <TextView
-        android:id="@+id/tvTanggalSelesai"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textColor="@color/text"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/tvTanggalMulai"/>
+    android:textColor="@color/merahApp"
+    android:textSize="16sp"/>
+<TextView
+    android:id="@+id/tvPerjalanan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:textColor="@color/text"
+    android:layout_below="@id/tvNamaRencana"/>
+<TextView
+    android:id="@+id/tvTanggalMulai"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:textColor="@color/text"
+    android:layout_alignParentRight="true" />
+<TextView
+    android:id="@+id/tvTanggalSelesai"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:textColor="@color/text"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/tvTanggalMulai"/>
 </RelativeLayout>
