@@ -40,7 +40,9 @@ public class RiwayatAdpater extends RecyclerView.Adapter<RiwayatAdpater.RiwayatV
             @Override
             public void onClick(View v) {
                 Toast.makeText(context, listRencana.get(position).getRencana(), Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(context, SubRencanaActivity.class);
+                intent.putExtra("NamaRencana",listRencana.get(position).getRencana());
+                context.startActivity(intent);
             }
         });
     }
