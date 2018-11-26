@@ -24,7 +24,10 @@
                     android:layout_width="40dp"
                     android:layout_height="60dp"
                     android:src="@drawable/ic_navigate_putih"
-                    style="@style/RtlOverlay.Widget.AppCompat.ActionBar.TitleItem"/>
+                    style="@style/RtlOverlay.Widget.AppCompat.ActionBar.TitleItem"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
                 <TextView
                     android:id="@+id/tambahRencanaTitle"
                     android:layout_width="wrap_content"
@@ -122,7 +125,10 @@
                 android:text="@string/tambah_rencana"
                 android:textAllCaps="false"
                 android:textColor="@color/putih"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
 
             <Button
                 android:id="@+id/btnKonfirmasi"
@@ -136,7 +142,10 @@
                 android:text="@string/konfirmasi"
                 android:textAllCaps="false"
                 android:textColor="@color/putih"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
             <TextView
                 android:id="@+id/tvDaftarJadwal"
                 android:layout_width="match_parent"

@@ -71,10 +71,13 @@
                 android:background="@drawable/btn_circle_merah"
                 android:textColor="@color/putih"
                 android:textAllCaps="false"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
 
             <Button
-                android:id="@+id/btnGoogle"
+                android:id="@+id/btnLupa"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:textSize="12sp"
@@ -84,6 +87,9 @@
                 android:textColor="@color/hitam"
                 android:textAllCaps="false"
                 android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 />
 
             <TextView
@@ -95,7 +101,10 @@
                 android:textAllCaps="false"
                 android:textColor="@color/putih"
                 android:layout_marginTop="40dp"
-                android:layout_below="@id/btnGoogle"/>
+                android:layout_below="@id/btnLupa"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

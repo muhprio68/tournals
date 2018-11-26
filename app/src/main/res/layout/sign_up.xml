@@ -106,7 +106,10 @@
                 android:background="@drawable/btn_circle_merah"
                 android:textColor="@color/putih"
                 android:textAllCaps="false"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -117,7 +120,10 @@
                 android:text="@string/sudah_punya_akun"
                 android:textAllCaps="false"
                 android:textColor="@color/putih"
-                android:layout_marginBottom="7dp"/>
+                android:layout_marginBottom="7dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

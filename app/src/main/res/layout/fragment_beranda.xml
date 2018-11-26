@@ -34,7 +34,10 @@
                         app:civ_border_color="@color/putih"
                         android:layout_gravity="left"
                         android:layout_alignParentRight="true"
-                        android:layout_marginRight="20dp"/>
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"/>
                 </RelativeLayout>
             </android.support.v7.widget.Toolbar>
         </RelativeLayout>
@@ -119,7 +122,10 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="16dp"
                 android:layout_below="@id/cvSelamatDatang"
-                app:cardBackgroundColor="@color/kuningApp">
+                app:cardBackgroundColor="@color/kuningApp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

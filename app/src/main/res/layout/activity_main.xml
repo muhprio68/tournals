@@ -24,5 +24,8 @@
         app:labelVisibilityMode="labeled"
         android:focusableInTouchMode="true"
         android:descendantFocusability="afterDescendants"
-        app:menu="@menu/bottomnavigation_menu" />
+        app:menu="@menu/bottomnavigation_menu"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"/>
 </RelativeLayout>
