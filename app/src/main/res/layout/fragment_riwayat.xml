@@ -17,6 +17,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/riwayat"
+                fontPath="fonts/Raleway-Regular.ttf"
+                tools:ignore="MissingPrefix"
                 android:textColor="@color/putih"
                 style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
         </android.support.v7.widget.Toolbar>

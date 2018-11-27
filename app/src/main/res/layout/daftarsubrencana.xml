@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
     android:layout_marginBottom="1dp"
     android:background="@color/putih"
@@ -17,7 +17,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/text"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        fontPath="fonts/Raleway-Regular.ttf"
+        tools:ignore="MissingPrefix"/>
 
     <TextView
         android:id="@+id/tvTanggalWaktu"
@@ -26,5 +28,7 @@
         android:textSize="12sp"
         android:layout_below="@+id/tvNamaSubRencana"
         android:textColor="@color/text"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        fontPath="fonts/Raleway-Regular.ttf"
+        tools:ignore="MissingPrefix"/>
 </RelativeLayout>

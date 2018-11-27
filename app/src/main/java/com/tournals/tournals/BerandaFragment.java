@@ -1,6 +1,7 @@
 package com.tournals.tournals;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -18,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 /**
