@@ -11,7 +11,7 @@
             android:id="@+id/riwayatToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/merahApp">
+            android:background="@color/colorPrimary">
             <TextView
                 android:id="@+id/riwayatTitle"
                 android:layout_width="wrap_content"

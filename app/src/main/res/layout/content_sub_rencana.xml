@@ -12,7 +12,7 @@
             android:id="@+id/subRencanaToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/merahApp">
+            android:background="@color/colorPrimary">
             <ImageView
                 android:id="@+id/subRencanaBack"
                 android:layout_width="40dp"

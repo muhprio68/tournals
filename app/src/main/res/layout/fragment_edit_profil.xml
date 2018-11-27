@@ -15,7 +15,7 @@
                 android:id="@+id/editProfilToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/merahApp">
+                android:background="@color/colorPrimary">
                 <TextView
                     android:id="@+id/editProfilTitle"
                     android:layout_width="wrap_content"
@@ -64,10 +64,10 @@
                 android:layout_marginTop="25dp"
                 android:layout_below="@id/btnGantiFoto"
                 android:textSize="12sp"
-                android:textColorHint="@color/merahApp"
-                android:textColor="@color/merahApp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
                 android:inputType="textPersonName"
-                android:backgroundTint="@color/merahApp"/>
+                android:backgroundTint="@color/colorPrimary"/>
 
             <EditText
                 android:id="@+id/edtEmail"
@@ -76,10 +76,10 @@
                 android:layout_below="@id/edtNama"
                 android:hint="email"
                 android:textSize="12sp"
-                android:textColorHint="@color/merahApp"
-                android:textColor="@color/merahApp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
                 android:inputType="textEmailAddress"
-                android:backgroundTint="@color/merahApp"/>
+                android:backgroundTint="@color/colorPrimary"/>
 
             <EditText
                 android:id="@+id/edtTTL"
@@ -88,10 +88,10 @@
                 android:hint="tanggal lahir"
                 android:layout_below="@id/edtEmail"
                 android:textSize="12sp"
-                android:textColorHint="@color/merahApp"
-                android:textColor="@color/merahApp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
                 android:inputType="date"
-                android:backgroundTint="@color/merahApp"/>
+                android:backgroundTint="@color/colorPrimary"/>
 
             <EditText
                 android:id="@+id/edtPassword"
@@ -100,10 +100,10 @@
                 android:layout_below="@id/edtTTL"
                 android:hint="password"
                 android:textSize="12sp"
-                android:textColorHint="@color/merahApp"
-                android:textColor="@color/merahApp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
                 android:inputType="textPassword"
-                android:backgroundTint="@color/merahApp"/>
+                android:backgroundTint="@color/colorPrimary"/>
 
             <EditText
                 android:id="@+id/edtConfirm"
@@ -112,10 +112,10 @@
                 android:layout_below="@id/edtPassword"
                 android:hint="konfirmasi password"
                 android:textSize="12sp"
-                android:textColorHint="@color/merahApp"
-                android:textColor="@color/merahApp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
                 android:inputType="textPassword"
-                android:backgroundTint="@color/merahApp"/>
+                android:backgroundTint="@color/colorPrimary"/>
             <Button
                 android:id="@+id/btnSelesai"
                 android:layout_width="157dp"

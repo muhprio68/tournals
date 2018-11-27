@@ -15,12 +15,14 @@
                 android:id="@+id/berandaToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/merahApp">
+                android:background="@color/colorPrimary">
                 <TextView
                     android:id="@+id/berandaTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/beranda"
+                    fontPath="fonts/Raleway-Regular.ttf"
+                    tools:ignore="MissingPrefix"
                     android:textColor="@color/putih"
                     style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
                 <RelativeLayout
@@ -69,21 +71,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Halo!"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                     <TextView
                         android:id="@+id/tvSelamatDtg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Selamat datang di Tournals!"
                         android:layout_below="@id/tvHalo"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                     <TextView
                         android:id="@+id/tvSuhu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="27 °C"
                         android:textSize="16sp"
-                        android:layout_alignParentRight="true"/>
+                        android:layout_alignParentRight="true"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
 
                     <TextView
                         android:id="@+id/tvCuaca"
@@ -92,7 +100,9 @@
                         android:layout_alignStart="@+id/tvSuhu"
                         android:layout_below="@id/tvSuhu"
                         android:text="cerah"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
 
                     <TextView
                         android:id="@+id/tvJumlahRencana"
@@ -102,7 +112,9 @@
                         android:layout_alignParentTop="true"
                         android:layout_marginEnd="102dp"
                         android:text="5"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
 
                     <TextView
                         android:id="@+id/tvRencana"
@@ -112,7 +124,9 @@
                         android:layout_below="@id/tvJumlahRencana"
                         android:layout_marginEnd="81dp"
                         android:text="rencana"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -122,7 +136,7 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="16dp"
                 android:layout_below="@id/cvSelamatDatang"
-                app:cardBackgroundColor="@color/kuningApp"
+                app:cardBackgroundColor="@color/colorAccent"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackground">
@@ -148,7 +162,9 @@
                         android:layout_below="@+id/ivTambah"
                         android:textColor="@color/putih"
                         android:textSize="12sp"
-                        android:layout_centerHorizontal="true"/>
+                        android:layout_centerHorizontal="true"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <TextView
@@ -158,7 +174,9 @@
                 android:text="Rencana Baru"
                 android:textSize="16sp"
                 android:layout_marginTop="14dp"
-                android:layout_below="@+id/cvTambah"/>
+                android:layout_below="@+id/cvTambah"
+                fontPath="fonts/Raleway-Regular.ttf"
+                tools:ignore="MissingPrefix"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -174,7 +192,7 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="16dp"
                 android:layout_below="@id/tvRencanaBaru"
-                app:cardBackgroundColor="@color/merahApp">
+                app:cardBackgroundColor="@color/colorPrimary">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -188,7 +206,9 @@
                         android:layout_height="wrap_content"
                         android:text="Trip #1"
                         android:textColor="@color/putih"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                     <TextView
                         android:id="@+id/tvTanggal1"
                         android:layout_width="wrap_content"
@@ -196,7 +216,9 @@
                         android:text="01/12/2018"
                         android:textColor="@color/putih"
                         android:layout_below="@id/tvNamaRencana1"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -206,7 +228,7 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="16dp"
                 android:layout_below="@id/cvRencana1"
-                app:cardBackgroundColor="@color/merahApp">
+                app:cardBackgroundColor="@color/colorPrimary">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -220,7 +242,9 @@
                         android:layout_height="wrap_content"
                         android:text="Trip #2"
                         android:textColor="@color/putih"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                     <TextView
                         android:id="@+id/tvTanggal2"
                         android:layout_width="wrap_content"
@@ -228,7 +252,9 @@
                         android:text="01/12/2018"
                         android:textColor="@color/putih"
                         android:layout_below="@id/tvNamaRencana2"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -238,7 +264,7 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="16dp"
                 android:layout_below="@id/cvRencana2"
-                app:cardBackgroundColor="@color/merahApp">
+                app:cardBackgroundColor="@color/colorPrimary">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -252,7 +278,9 @@
                         android:layout_height="wrap_content"
                         android:text="Trip Aha Aha"
                         android:textColor="@color/putih"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                     <TextView
                         android:id="@+id/tvTanggal3"
                         android:layout_width="wrap_content"
@@ -260,7 +288,9 @@
                         android:text="6 minggu"
                         android:textColor="@color/putih"
                         android:layout_below="@id/tvNamaRencana3"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp"
+                        fontPath="fonts/Raleway-Regular.ttf"
+                        tools:ignore="MissingPrefix"/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
         </RelativeLayout>
