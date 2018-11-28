@@ -37,7 +37,10 @@
             android:layout_height="200dp"
             android:src="@drawable/foto"
             android:layout_marginTop="50dp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"/>
         <TextView
             android:id="@+id/tvNama"
             android:layout_width="wrap_content"
@@ -48,7 +51,10 @@
             fontPath="fonts/Raleway-Regular.ttf"
             tools:ignore="MissingPrefix"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/fotoProfil"/>
+            android:layout_below="@+id/fotoProfil"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"/>
         <TextView
             android:id="@+id/tvTempat"
             android:layout_width="wrap_content"
@@ -59,7 +65,10 @@
             tools:ignore="MissingPrefix"
             android:text="Malang, Indonesia"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/tvNama"/>
+            android:layout_below="@+id/tvNama"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"/>
 
         <Button
             android:id="@+id/btnEditProfil"

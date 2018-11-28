@@ -115,7 +115,7 @@
                 android:inputType="text"
                 android:backgroundTint="@color/colorPrimary"/>
             <EditText
-                android:id="@+id/edtTanggal"
+                android:id="@+id/edtPilihTanggal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/edtNamaLokasi"
@@ -127,30 +127,30 @@
                 android:textColor="@color/colorPrimary"
                 android:inputType="date"
                 android:backgroundTint="@color/colorPrimary"/>
-            <Button
-                android:id="@+id/btnWaktu"
+            <EditText
+                android:id="@+id/edtWaktu"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
-                android:layout_below="@id/edtTanggal"
-                android:text="Pilih Waktu"
+                android:layout_below="@id/edtPilihTanggal"
+                android:hint="Waktu"
                 android:textSize="12sp"
                 fontPath="fonts/Raleway-Regular.ttf"
                 tools:ignore="MissingPrefix"
+                android:textColorHint="@color/colorPrimary"
                 android:textColor="@color/colorPrimary"
-                android:background="@drawable/btn_circle_putih"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?attr/selectableItemBackground"/>
+                android:backgroundTint="@color/colorPrimary"
+                android:focusable="false"/>
 
             <EditText
                 android:id="@+id/edtLokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btnWaktu"
-                android:text="lokasi"
+                android:layout_below="@id/edtWaktu"
+                android:hint="Lokasi"
                 fontPath="fonts/Raleway-Regular.ttf"
                 tools:ignore="MissingPrefix"
                 android:textSize="12sp"
+                android:focusable="false"
                 android:textColor="@color/colorPrimary"
                 android:backgroundTint="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"/>

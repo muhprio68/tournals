@@ -44,7 +44,10 @@
                 android:layout_height="128dp"
                 android:src="@drawable/foto"
                 android:layout_marginTop="20dp"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
 
             <Button
                 android:id="@+id/btnGantiFoto"
@@ -59,7 +62,10 @@
                 tools:ignore="MissingPrefix"
                 android:textAllCaps="false"
                 android:textColor="@color/putih"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"/>
             <EditText
                 android:id="@+id/edtNama"
                 android:layout_width="match_parent"
