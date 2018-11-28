@@ -71,10 +71,12 @@ public class TambahRencanaActivity extends AppCompatActivity {
                 RecyclerView rv = (RecyclerView) dialogView.findViewById(R.id.my_recycler_view);
                 rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                 addData();
-                TanggalAdapter adapter = new TanggalAdapter(getApplicationContext(), rencanaArrayList);
-                rv.setAdapter(adapter);
+                TanggalAdapter adapter = new TanggalAdapter(getApplicationContext(), rencanaArrayList, edtPilihTanggal);
                 AlertDialog dialog = builder.create();
+                adapter.dialog = dialog;
+                rv.setAdapter(adapter);
                 dialog.show();
+
             }
         });
 

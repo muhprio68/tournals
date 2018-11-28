@@ -12,13 +12,15 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
+    public BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         loadFragment(new BerandaFragment());
 // inisialisasi BottomNavigaionView
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bn_main);
+        bottomNavigationView = findViewById(R.id.bn_main);
 // beri listener pada saat item/menu bottomnavigation terpilih
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
@@ -54,4 +56,5 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return loadFragment(fragment);
     }
+
 }

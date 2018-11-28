@@ -1,5 +1,6 @@
 package com.tournals.tournals;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -18,10 +19,13 @@ public class TanggalAdapter extends RecyclerView.Adapter<TanggalAdapter.TanggalV
     private ArrayList<Rencana> listRencana;
     private Context context;
     MainActivity activity;
+    EditText edtPilihTanggal;
+    public AlertDialog dialog;
 
-    public TanggalAdapter(Context context, ArrayList<Rencana> listRencana){
+    public TanggalAdapter(Context context, ArrayList<Rencana> listRencana, EditText edtPilihTanggal){
         this.context=context;
         this.listRencana=listRencana;
+        this.edtPilihTanggal = edtPilihTanggal;
     }
 
     @NonNull
@@ -35,11 +39,13 @@ public class TanggalAdapter extends RecyclerView.Adapter<TanggalAdapter.TanggalV
     @Override
     public void onBindViewHolder(@NonNull final TanggalAdapter.TanggalViewHolder holder, final int position) {
         holder.tvPilihTanggal.setText(listRencana.get(position).getTanggalMulai());
-        holder.tvPilihTanggal.setOnClickListener(new View.OnClickListener() {
+        holder.rlPilihTanggal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, listRencana.get(position).getRencana(), Toast.LENGTH_SHORT).show();
-                holder.edtPilihTanggal.setText(listRencana.get(position).getTanggalMulai());
+//                Toast.makeText(context, listRencana.get(position).getRencana(), Toast.LENGTH_SHORT).show();
+                edtPilihTanggal.setText(listRencana.get(position).getTanggalMulai());
+                dialog.cancel();
+//                holder.edtPilihTanggal.setText(listRencana.get(position).getTanggalMulai());
             }
         });
     }

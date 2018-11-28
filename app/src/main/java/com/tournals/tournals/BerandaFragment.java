@@ -32,6 +32,7 @@ MainActivity activity;
         // Required empty public constructor
     }
 
+    BottomNavigationView bottomNavigationView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -74,6 +75,7 @@ MainActivity activity;
             ((AppCompatActivity)getActivity()).getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fl_container, fragment)
                     .commit();
+            ((MainActivity)getActivity()).bottomNavigationView.setSelectedItemId(R.id.profil_menu);
             return true;
         }
         return false;
