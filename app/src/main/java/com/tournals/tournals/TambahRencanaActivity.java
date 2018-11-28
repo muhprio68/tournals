@@ -31,6 +31,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.zip.Inflater;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -43,6 +44,7 @@ public class TambahRencanaActivity extends AppCompatActivity {
     private EditText edtWaktu;
     private TimePickerDialog timePickerDialog;
     private EditText edtPilihTanggal;
+    private ArrayList<Rencana> rencanaArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,22 @@ public class TambahRencanaActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+        edtPilihTanggal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(TambahRencanaActivity.this);
+                LayoutInflater inflater =  getLayoutInflater();
+                View dialogView = inflater.inflate(R.layout.dialog_pilihtanggal,null);
+                builder.setView(dialogView);
+                RecyclerView rv = (RecyclerView) dialogView.findViewById(R.id.my_recycler_view);
+                rv.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+                addData();
+                TanggalAdapter adapter = new TanggalAdapter(getApplicationContext(), rencanaArrayList);
+                rv.setAdapter(adapter);
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,5 +162,12 @@ public class TambahRencanaActivity extends AppCompatActivity {
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+    void addData(){
+        rencanaArrayList = new ArrayList<>();
+        rencanaArrayList.add(new Rencana("Trip Malang", "Sedang berlangsung", "01/12/2018", "03/12/2018"));
+        rencanaArrayList.add(new Rencana("Trip Jombang", "Perjalanan selesai", "15/08/2018", "20/08/2018"));
+        rencanaArrayList.add(new Rencana("Trip Gresik", "Perjalanan selesai", "01/08/2018", "02/08/2018"));
+        rencanaArrayList.add(new Rencana("Trip Jember", "Perjalanan selesai", "02/07/2018", "04/07/2018"));
     }
 }

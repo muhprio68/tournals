@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/putih"
+    android:outlineAmbientShadowColor="@color/hitam"
+    android:outlineSpotShadowColor="@color/hitam"
+    android:id="@+id/rlPilihTanggal"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+    <TextView
+        android:id="@+id/tvPilihTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        fontPath="fonts/Raleway-Regular.ttf"
+        tools:ignore="MissingPrefix"
+        android:textSize="16sp"/>
+</RelativeLayout>
