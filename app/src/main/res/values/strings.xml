@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">tournals</string>
-    <string name="beranda">beranda</string>
-    <string name="riwayat">riwayat</string>
-    <string name="profil">profil</string>
+    <string name="beranda">Beranda</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="profil">Profil</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tambah_rencana">tambah rencana</string>
+    <string name="tambah_rencana">Tambah rencana</string>
     <string name="title_activity_tambah_rencana">TambahRencanaActivity</string>
-    <string name="konfirmasi">konfirmasi</string>
+    <string name="konfirmasi">Konfirmasi</string>
     <string name="daftar_jadwal">Daftar Jadwal</string>
     <string name="ganti_foto_profil">Ganti foto profil</string>
     <string name="daftar">Daftar</string>
@@ -16,13 +16,15 @@
     <string name="sudah_punya_akun">Sudah punya akun</string>
     <string name="tournals">tournals</string>
     <string name="make_your_own_tour_journal">make your own tour journal</string>
-    <string name="lupa_password">lupa password?</string>
+    <string name="lupa_password">Lupa password?</string>
     <string name="masuk_dengan_google">Masuk dengan Google</string>
     <string name="belum_punya_akun">Belum punya akun</string>
-    <string name="reset_password">reset password</string>
-    <string name="pastikan">pastikan email anda telah terdaftar</string>
+    <string name="reset_password">Reset password</string>
+    <string name="pastikan">Pastikan email anda telah terdaftar</string>
     <string name="kirim_kode_reset">Kirim kode reset</string>
-    <string name="verifikasi">verifikasi</string>
-    <string name="masukkan">masukkan kode verifikasi untuk masuk</string>
+    <string name="verifikasi">Verifikasi</string>
+    <string name="masukkan">Masukkan kode verifikasi untuk masuk</string>
     <string name="title_activity_sub_rencana">SubRencanaActivity</string>
+    <string name="login">Login</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

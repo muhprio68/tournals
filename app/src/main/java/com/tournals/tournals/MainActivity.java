@@ -1,5 +1,6 @@
 package com.tournals.tournals;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -7,7 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+
+    public BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,9 +20,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
         loadFragment(new BerandaFragment());
 // inisialisasi BottomNavigaionView
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bn_main);
+        bottomNavigationView = findViewById(R.id.bn_main);
 // beri listener pada saat item/menu bottomnavigation terpilih
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
+
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
 
@@ -46,4 +56,5 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return loadFragment(fragment);
     }
+
 }
